@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
         EditText e1 =(EditText)findViewById(R.id.clientID);
         String clientID = e1.getText().toString().trim();
         client =
-                new MqttAndroidClient(getApplicationContext(), "tcp://192.168.0.11:1883",
+                new MqttAndroidClient(getApplicationContext(), "tcp://192.168.43.73:1883",
                         clientID);
         Button b = (Button)findViewById(R.id.connect);
         b.setOnClickListener(new View.OnClickListener() {
